@@ -14,7 +14,7 @@ exports.up = function(knex) {
         tbl.text('imgUrl').notNullable()
         tbl.text('description').notNullable()
         tbl.text('url').notNullable()
-        tbl.integer('user_id').notNullable().unsigned().references('id').inTable('user').onDelete('CASCADE').onUpdate('CASCADE')
+        tbl.integer('user_id').notNullable().unsigned().references('id').inTable('users').onDelete('CASCADE').onUpdate('CASCADE')
         tbl.timestamps(true, true)
     })
 }
