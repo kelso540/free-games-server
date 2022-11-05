@@ -5,6 +5,7 @@ exports.up = function(knex) {
         tbl.text('password', 200).notNullable()
         tbl.text('imageUrl').notNullable()
         tbl.text('backgroundColor').notNullable()
+        tbl.integer('id').notNullable()
         tbl.timestamps(true, true) 
     })
 
